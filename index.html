@@ -1,35 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>App Store - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="Images/favicon.png" rel="icon" align="left">
- 
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
- 
-
-
-             <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet">
+	 <meta charset="utf-8"
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Description" content="Youtube Redirect">
+    <meta name="Copyright" content="Copyright (c) 2021 Youtube@upasyo. All Rights Reserved">
+    <title>Youtube Redirect</title>
+    <link rel="stylesheet" href="stylesheets/default.css" />
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   
-  
+    <div class="image">
+    <img src="https://media.giphy.com/media/5NPhdqmyRxn8I/giphy.gif" width="20%" height="20%"
+</div>
+<style>
+    .image{
+        right:90%;
+        top:2%;
+        left:1%;
+        position:fixed;
+        height:190px;
+        </style>
+
+<div>
+    <img src="redirect.gif" class="redirect" 
+</div>
+<style>
+    .redirect{
+    position: fixed; /* or absolute */
+    left: 22%;
+    right:40%;
+    top: 40%;
+}
+</style>
+
+<style> 
+        #footer { 
+            position: fixed; 
+            padding: 10px 10px 0px 10px; 
+            bottom: 0; 
+            width: 100%; 
+            /* Height of the footer*/  
+            height: 40px; 
+            background: white; 
+        } 
+    </style> 
+
+
+
+  <script type="text/JavaScript">
+        function timeRefresh(timeoutPeriod) {
+            setTimeout("location.reload(true);", timeoutPeriod);
+        }
+    </script>
+    
+    
+
+
+
+    <script>
+    div.c{
+  margin: auto;
+  position: static;
+  line-height: 80%;
+  width: fit-content;
+  padding: 1px;
+}
+</script>
+
+<script>
+    .p{
+        left:50%;
+    }
+</script>
+
 </head>
-  <body>
 
-   <div class="redirect">
-   <img src="https://i.giphy.com/media/3ornjOID5ncUy9xohW/giphy.webp" height="120" width="150" background color="white" alt="Redirecting..." align="centre">
-   </div>
+<body onLoad="JavaScript:timeRefresh(22000);">
 
-   
-    <div class="c"><p><b><marquee behavior="scroll" direction="left"  onmouseout="this.start();" onmouseover="this.stop();" scrollamount="7"><strong> <span style="color:#FF0000;"> <b>This page will Redirect You To The Youtube Channel on <span style="color: chocolate;"><u>12th January at 12:00 pm UTC</u></span>. Please Be Live on This Website at The Scheduled time</b><a href="https://www.youtube.com/user/kingshukkushari" target="_blank"> <span style="color:#FF0000;"> Click Here To be Visit Upasyo@Youtube</span></a>  This Website Was Created by Upasyo Powered by <i>Google LLC</i></span> </strong></marquee></p></b> </div>
-   
-  </body>
+
+
+
+    <p id="Timer"></p>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 21, 2021 15:59:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location="https://youtube.com/kingshukkushari";
+        } else {
+            // Update remaining seconds
+            document.getElementById("Timer").innerHTML = seconds;
+            // Count down using javascript
+    }
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("Timer").innerHTML = "Are You Ready To Live On Youtube";
+  }
+}, 1000);
+</script>
+
+    <div id="footer"><marquee behavior="scroll" direction="left"  onmouseout="this.start();" onmouseover="this.stop();" scrollamount="7"><strong> <span style="color:#FF0000;"> <b>This page will Redirect You To The Youtube Channel on <span style="color: chocolate;"><u>12th February at 12:00 pm UTC</u></span>. Please Be Live on This Website at The Scheduled time</b><a href="https://www.youtube.com/user/kingshukkushari" target="_blank"> <span style="color:#FF0000;"> Click Here To be Visit Upasyo@Youtube</span></a>  This Website Was Created by Upasyo Powered by <i>Google LLC</i></span> </strong></marquee> </div>
+
+</body>
+</html>
