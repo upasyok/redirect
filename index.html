@@ -78,10 +78,16 @@
   padding-left: 90px;
 }
 </style>
+	
+	<script type="text/JavaScript">
+        function timeRefresh(timeoutPeriod) {
+            setTimeout("location.reload(true);", timeoutPeriod);
+        }
+    </script>
 </head>
 
 
-<body>
+<body onLoad="JavaScript:timeRefresh(22000);">
 
 
     <p id="Timer"></p>
