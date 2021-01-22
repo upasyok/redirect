@@ -28,12 +28,28 @@ div.c{
   width: fit-content;
   padding: 1px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+   .redirect{
+    position: fixed; /* or absolute */
+    left: 40%;
+    right:50%;
+    top: 40%;
 }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* For mobile phones: */
+   .redirect{
+    position: fixed; /* or absolute */
+    left: 40%;
+    right:50%;
+    top: 40%;
+}
+}
+
+
+
 
 
 
