@@ -47,9 +47,27 @@ div.c{
     top: 40%;
 }
 }
+@media only screen and (max-device-width: 287px) {
+  /* For mobile phones: */
+   .redirect{
+    position: fixed; /* or absolute */
+    left: 40%;
+    right:50%;
+    top: 40%;
+}
+}
 
 
-
+@media only screen and (max-device-width: 480px) {
+  /* For mobile phones: */
+  .addeventatc {
+  position:fixed;
+  left:30%;
+  top:55%;
+  border: 3px solid white;
+  margin: 2px;
+}
+}
 
 
 
