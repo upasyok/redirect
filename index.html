@@ -101,20 +101,45 @@ position: fixed;
 
 	
  
-
+<div class="wrap">
 <a title="Add to Calendar" class="addeventatc" data-id="jc5930501" href="https://www.addevent.com/event/jc5930501" target="_blank" rel="nofollow">Add to Calendar</a>
-	<script type="text/javascript" src="calender.js" async defer></script>
-    
- 
+	<script type="text/javascript" src="calender.js" async defer></script></div>
     <style>
-.addeventatc {
-  position:fixed;
-  width:auto;
-  top:52%;
-  border: 3px dashed red;
-  margin: 2px;
+ .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.addeventatc {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.addeventatc:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+	
 	</style>
+	
+   
     
 	<script type="text/JavaScript">
         function timeRefresh(timeoutPeriod) {
