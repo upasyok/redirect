@@ -278,7 +278,7 @@ justify-content: center;
       
   left:50%;
    width:50%;
-   top:59%;
+   top:62%;
   position:fixed;
   height:50px;
   padding: 0px 2px;
@@ -350,7 +350,7 @@ justify-content: center;
   outline: none;
   background:#fff;
     border: 3px dotted violet;
-    left:1%;
+    left:3%;
     top:48%;
       }
 }
@@ -386,8 +386,8 @@ var x = setInterval(function() {
             document.getElementById("clock").innerHTML = seconds;
             // Count down using javascript
     }
-document.getElementById("clock").innerHTML = days + "days " + hours + "hours "
-  + minutes + "minutes " + seconds + "seconds ";
+document.getElementById("clock").innerHTML = days + "d " + hours + "h"
+  + minutes + "m " + seconds + "s";
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
